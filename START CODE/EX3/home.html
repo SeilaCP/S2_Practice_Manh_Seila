@@ -1,0 +1,117 @@
+<!-- Write your code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .link{
+            display: inline-flex;
+            justify-content: space-around;
+            width: 40%;
+            padding: 0px;
+            list-style: none ;
+        }
+        .link li{
+            background-color: white;
+            border-bottom: solid 2px white;
+            padding-right: 2.5%;
+            padding-left: 2.5%;
+            padding-bottom: 13px;
+        }
+
+        .link li a{
+            color: black;
+            font-size: 12px;
+            text-decoration: none;
+            transition-property: 0.5s;
+        }
+
+        .link li a:hover{
+            color: rgb(81, 85, 85);
+            border-bottom: solid 3px brown;
+            padding-bottom: 10px;
+        }
+
+        .cover{
+            width: 100%;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cover .img{
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .cover .img img{
+            width: 70%;
+            /* background-color: black; */
+        }
+        .cover .content
+        {
+            width: 45%;
+            align-items: center;
+        }
+
+        .cover .content #title .paragra{
+            width: 350px;
+        }
+
+        .inf{
+            display: flex;
+            height: 100px;
+            background-color: black;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img style="width: 75px;" src="img/Never Give Up.png" alt="">
+        </div>
+        <ul class="link">
+            <li><a href= "./home.html">HOME</a></li>
+            <li><a href= "./about.html">ABOUT US</a></li>
+            <li><a href= "./server.html">OUR SERVICES</a></li>
+            <li><a href= "./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="cover">
+        <div class="img">
+            <img src="img/jacket.png" alt="">
+        </div>
+        <div class="content">
+            <div id="title">
+                <h1></h1>
+                <h2><span style="color: brown;">BE WITH US</span><br>To create our professional style</h2>
+                <div class="paragra">
+                    <p>Looking for the perfect jacket? Our shop offers a stylish collection of high-quality jackets designed to keep you warm and on-trend. From sleek leather to cozy parkas, we have something for every season and style. Shop now and find the jacket that suits your unique look!</p>
+                </div>
+                    <a style=" font-family: Monospace; font-size: 14px; color:  brown; text-decoration: none;" href="./contact.html">Go here > </a>
+            </div>
+        </div>
+    </div>
+    <section class="inf">
+        <ul style="color: white;">
+            <li>Don't wait to try</li>
+            <li>Enjoy shop in our program</li>
+        </ul>
+    </section>
+
+</body>
+</html>
